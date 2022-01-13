@@ -401,6 +401,7 @@
 
 		input[type="text"],
 		input[type="email"],
+		input[type="tel"],
 		input[type="password"],
 		select,
 		textarea {
@@ -426,6 +427,7 @@
 
 		input[type="text"],
 		input[type="email"],
+		input[type="tel"],
 		input[type="password"],
 		select {
 			line-height: 1.25em;
@@ -504,7 +506,7 @@
 		color: #fff !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #8ebebc;
+		background-color: #d65252;
 		border: 0;
 		cursor: pointer;
 		@include vendor('background-image', ('linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15))', 'url("images/overlay.png")'));
@@ -760,7 +762,7 @@
 
 			&.one {
 				background-color: #81918E;
-				background-image: url('../../images/banner.jpg');
+				background-image: url('../../images/banner-dark.png');
 			}
 
 			&.two {

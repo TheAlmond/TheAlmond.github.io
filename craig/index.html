@@ -15,7 +15,7 @@
 		<!--Style for slide show-->
 		<style>
 			* {box-sizing: border-box}
-			.mySlides1, .mySlides2 {display: none}
+			.mySlides1, .mySlides2, .mySlides3 {display: none}
 			img {vertical-align: middle;}
 			
 			/* Slideshow container */
@@ -179,7 +179,22 @@
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+										<div class="slideshow-container">
+											<div class="mySlides3">
+												<img src="images/pic06.jpg" style="width:100%">
+											</div>
+										  
+											<div class="mySlides3">
+												<img src="images/pic07.jpg" style="width:100%">
+											</div>
+										  
+											<div class="mySlides3">
+												<img src="images/pic0.jpg" style="width:100%">
+											</div>
+										  
+											<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+											<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+										  </div>
 										<header>
 											<h3>Truck 3</h3>
 										</header>
@@ -281,9 +296,10 @@
 
 			<!--script for slideshow-->
 			<script>
-				var slideIndex = [1,1];
-				var slideId = ["mySlides1", "mySlides2"]
+				var slideIndex = [1,1,1];
+				var slideId = ["mySlides1", "mySlides2", "mySlides3"]
 				showSlides(1, 0);
+				showSlides(1, 1);
 				showSlides(1, 1);
 				
 				function plusSlides(n, no) {
